@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .hero {
+            background-color: #e9ebee;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .cta {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero .cta:hover {
+            background-color: #555;
+        }
+
+        .contact-number {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .contact-number a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .contact-number a:hover {
+            text-decoration: underline;
+        }
+
+        .best-sellers {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .best-sellers h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .books-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .book-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .book-item img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .book-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .book-item p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .call-now {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .call-now:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer ul li {
+            margin: 0 15px;
+        }
+
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .book-item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .book-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Online Book Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#best-sellers">Best Sellers</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to Our Online Book Store</h2>
+        <p>Your one-stop shop for all kinds of books.</p>
+        <div class="contact-number">
+            Contact us: <a href="tel:+18033104745">+18033104745</a>
+        </div>
+        <a href="tel:+18016098113"><button class="cta">Call Now</button></a>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section id="best-sellers" class="best-sellers">
+        <h2>Top Best Sellers</h2>
+        <div class="books-container">
+            <div class="book-item">
+                <img src="The_Great_Gatsby_Cover_1925_Retouched.jpg" alt="The Great Gatsby">
+                <h3>The Great Gatsby</h3>
+                <p>$10.99</p>
+                <a href="tel:+18033104745"><button class="call-now">Call Now</button></a>
+            </div>
+            <div class="book-item">
+                <img src="1984jpg.jfif" alt="1984 by George Orwell">
+                <h3>1984 by George Orwell</h3>
+                <p>$14.99</p>
+                <a href="tel:+18033104745"><button class="call-now">Call Now</button></a>
+            </div>
+            <div class="book-item">
+                <img src="To_Kill_a_Mockingbird_(first_edition_cover).jpg" alt="To Kill a Mockingbird">
+                <h3>To Kill a Mockingbird</h3>
+                <p>$12.99</p>
+                <a href="tel:+18033104745"><button class="call-now">Call Now</button></a>
+            </div>
+            <div class="book-item">
+                <img src="pride.jfif" alt="Pride and Prejudice">
+                <h3>Pride and Prejudice</h3>
+                <p>$9.99</p>
+                <a href="tel:+18033104745"><button class="call-now">Call Now</button></a>
+            </div>
+            <div class="book-item">
+                <img src="harry potter.jfif" alt="Harry Potter and the Sorcerer's Stone">
+                <h3>Harry Potter and the Sorcerer's Stone</h3>
+                <p>$19.99</p>
+                <a href="tel:+18033104745"><button class="call-now">Call Now</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="Contact">
+        <p>&copy; 2024 Online Book Store. All rights reserved.</p>
+        <ul>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            <li><a href="termsservice.html">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
